@@ -13,14 +13,14 @@ function App() {
       <div className="App">
         <ul>
           <li>
-            <Link to="/public">Public Page</Link>
+            <Link to="/public">Home</Link>
           </li>
           <li>
-            <Link to="/protected">Protected Page</Link>
+            <Link to="/api/friends">View Friends</Link>
           </li>
         </ul>
         <Route path="/login" component={Login} />
-        <PrivateRoute exact path="/protected" component={Friends} />
+        <PrivateRoute exact path="/api/friends" component={Friends} />
       </div>
     </Router>
   );
